@@ -1,0 +1,1133 @@
+@font-face {
+    font-family: 'Gotham Book Medium';
+    src: url('../fonts/GothamBook/Gotham-Medium.eot');
+    src: url('../fonts/GothamBook/Gotham-Medium.woff2') format('woff2'), url('../fonts/GothamBook/Gotham-Medium.woff') format('woff'), url('../fonts/GothamBook/Gotham-Medium.ttf') format('truetype'), url('../fonts/Gotham Book/Gotham-Medium.svg#Gotham-Medium') format('svg'), url('../fonts/GothamBook/Gotham-Medium.eot?#iefix') format('embedded-opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('../fonts/GothamBook/Gotham-Book.eot');
+    src: url('../fonts/GothamBook/Gotham-Book.woff2') format('woff2'), url('../fonts/GothamBook/Gotham-Book.woff') format('woff'), url('../fonts/GothamBook/Gotham-Book.ttf') format('truetype'), url('../fonts/GothamBook/Gotham-Book.svg#Gotham-Book') format('svg'), url('../fonts/GothamBook/Gotham-Book.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Book Bold';
+    src: url('../fonts/GothamBook/Gotham-Bold.eot');
+    src: url('../fonts/GothamBook/Gotham-Bold.woff2') format('woff2'), url('../fonts/GothamBook/Gotham-Bold.woff') format('woff'), url('../fonts/GothamBook/Gotham-Bold.ttf') format('truetype'), url('../fonts/GothamBook/Gotham-Bold.svg#Gotham-Bold') format('svg'), url('../fonts/GothamBook/Gotham-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: 700;
+}
+
+html,
+body {
+    font-family: 'Gotham Book', sans-serif;
+    min-height: 100%;
+    color: #000;
+}
+
+
+/*common*/
+
+a,
+a:focus,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+.pr-3 {
+    padding-right: 3%;
+}
+
+.pl-3 {
+    padding-left: 3%;
+}
+
+.pr-30 {
+    padding-right: 30px;
+}
+
+.pl-30 {
+    padding-left: 30px;
+}
+
+.margin-40 {
+    margin: 40px 0;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+section.content p.mb-xs {
+    margin-bottom: 20px !important;
+}
+
+.bdr-btm {
+    border-bottom: 4px solid #e77e3b;
+}
+
+
+/*end*/
+
+
+/* navbar */
+
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+
+/* link */
+
+.navbar-default .navbar-nav > li > a {
+    color: #1e355e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #1e355e;
+    outline: 0;
+    font-weight: 700;
+    border-bottom: 1px solid #e77e3b;
+    padding-bottom: 10px;
+}
+
+.navbar-default .navbar-nav > li.logo > a:hover,
+.navbar-default .navbar-nav > li.logo > a:focus {
+    color: #1e355e;
+    outline: 0;
+    font-weight: 700;
+    border-bottom: 0;
+    padding-bottom: 10px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #1e355e;
+    background-color: transparent;
+    font-weight: 700;
+    border-bottom: 1px solid #e77e3b;
+    padding-bottom: 10px;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #1e355e;
+    background-color: #fff;
+}
+
+
+/* caret */
+
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+
+
+/* mobile version */
+
+.navbar-default .navbar-toggle {
+    border-color: #1e355e;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #1e355e;
+}
+
+.logo,
+.logo a {
+    padding-top: 5px;
+    padding-bottom: 0 !important;
+}
+
+.nav > li > a > img {
+    max-width: 220px;
+}
+
+.logo-xs {
+    display: none;
+}
+
+.btn-polyverse {
+    font-size: 25px;
+    font-family: 'Gotham Book Medium', sans-serif;
+    font-weight: 700;
+    padding: 8px 25px;
+    line-height: 42px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: normal;
+    min-width: 235px;
+    transition: 0.5s all ease-in-out;
+}
+
+.btn-blue {
+    background: #173693;
+    border: 1px solid #173693;
+    color: #fff;
+}
+
+.btn-orange {
+  background: #e77e3b;
+  border: 1px solid #e77e31;
+  color: #fff;
+}
+
+/*.btn-polyverse.btn-xs {
+    font-size: 25px;
+    line-height: 30px;
+}*/
+
+/*
+.btn-polyverse + .btn-polyverse {
+    display: block;
+    margin-top: 10px;
+}
+*/
+
+.btn-polyverse:hover,
+.btn-polyverse:focus,
+.btn-polyverse:active {
+    background: #1c2749;
+    border: 1px solid #1c2749;
+    color: #fff;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+section {
+    position: relative;
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+#sliderVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    right: 0;
+    bottom: 0;
+}
+
+.video-overlay {
+    background: rgba(32, 45, 72, 0.60);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-parallax {
+    /*    background: url('../img/banner_masked.png');*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 100px;
+    padding: 20px 0 20px;
+}
+
+.parallax {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 100px;
+    padding: 150px 0 0;
+}
+
+.why-work-parallax {
+    background-image: url('../img/why-it-works-banner.jpg');
+}
+
+.how-work-parallax {
+    background-image: url('../img/how-it-works-banner.jpg');
+}
+
+.career-parallax {
+    background-image: url('../img/career-banner.jpg');
+}
+
+.company-parallax {
+    background-image: url('../img/company-banner.png');
+}
+
+.customer-parallax {
+    background-image: url('../img/customer-banner.jpg');
+}
+
+.contact-parallax {
+    background-image: url('../img/contact-banner.jpg');
+}
+
+.news-parallax {
+    background-image: url('../img/news-banner.jpg');
+}
+
+.notfound-parallax {
+    background-image: url('../img/404-banner.png');
+}
+
+.banner-heading h2 {
+    font-family: 'Gotham Book Bold', sans-serif;
+    font-size: 8rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.banner-heading h2:after {
+    content: "";
+    display: inline-block;
+    height: 4px;
+    vertical-align: middle;
+    width: 100%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-bottom: 4px solid #e77e3b;
+}
+
+.carousel-caption {
+    position: relative;
+    right: 0;
+    left: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.slider-heading h3 {
+    font-family: 'Gotham Book Medium', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #e77e3b;
+    text-shadow: none;
+}
+
+.slider-heading h2 {
+    font-family: 'Gotham Book Bold', sans-serif;
+    font-size: 8rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.slider-heading h2 span {
+    border-bottom: 4px solid #e77e3b;
+}
+
+.carousel-caption p {
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 4rem;
+    font-weight: normal;
+    color: #fff;
+    line-height: 6rem;
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-shadow: none;
+}
+
+.carousel-control {
+    top: auto;
+    bottom: 30%;
+    opacity: 1;
+    width: 70px;
+}
+
+.carousel-control.left {
+    background: none;
+    left: 10%;
+}
+
+.carousel-control.right {
+    background: none;
+    right: 10%;
+}
+
+.carousel-control img {
+    width: 60px;
+}
+
+section.content {
+    background: #fff;
+    padding: 5% 0;
+}
+
+section.content p {
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #202d48;
+    margin-bottom: 20px;
+}
+
+section.content .sub-heading {
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: #202d48;
+    line-height: 6rem;
+    margin: 40px 0;
+    text-align: center;
+}
+
+section.content .sub-heading span {
+    border-bottom: 4px solid #e77e3b;
+}
+
+section.content .sub-heading.w-600 {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+}
+
+section.content .title-bar {
+    font-family: 'Gotham Book Medium', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: #202d48;
+    border-bottom: 4px solid #e77e3b;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.content img {
+    width: 100%;
+}
+
+.title-wrap {
+    max-width: 400px;
+    padding-left: 15px;
+}
+
+.title-wrap.center {
+    margin: 20px auto 10px;
+}
+
+.title-wrap.right {
+    float: right;
+}
+
+.title-bar .featured-icon {
+    width: 50px;
+    float: left;
+}
+
+.title-bar span {
+    margin-left: 60px;
+    display: block;
+}
+
+section.content .title-bar.border-bottom {
+    border-bottom: none;
+}
+
+.title-bar.border-bottom span {
+    border-bottom: 4px solid #e77e3b;
+    margin: 0;
+    width: 400px;
+    margin-top: 10px;
+}
+
+section.content .fa-linkedin-square {
+    color: #e77e3b;
+    font-size: 36px;
+}
+
+section.content .fa-linkedin-square:hover,
+section.content .fa-linkedin-square:focus {
+    color: #1c2749;
+}
+
+section.contact {
+    background: #fff;
+    padding: 5% 0;
+    text-align: center;
+}
+
+section.contact h3 {
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: #202d48;
+    line-height: 6rem;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+section.security {
+    background: #e77e3b;
+    padding: 5%;
+    text-align: center;
+}
+
+section.security .security-icon {
+    max-width: 40%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+section.security p {
+    font-family: 'Gotham Book Medium', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.works img {
+    width: 100%;
+}
+
+.works .left-img {
+    background: url('../img/why-work-left.jpg') no-repeat;
+    background-size: 50% 100%;
+    background-position: left center;
+}
+
+.works .right-img {
+    background: url('../img/why-work-right.jpg') no-repeat;
+    background-size: 50% 100%;
+    background-position: right center;
+}
+
+.why-works {
+    background: #fff;
+    padding: 50px;
+    padding-right: 10%;
+}
+
+.why-works.left {
+    padding-right: 50px;
+    padding-left: 15%;
+}
+
+.why-works h2 {
+    font-family: 'Gotham Book Bold', sans-serif;
+    font-size: 8rem;
+    font-weight: 700;
+    color: #202d48;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.why-works p {
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    color: #160b19;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+section.news {
+    background: #8e6c96;
+    padding: 5% 0;
+    text-align: center;
+}
+
+section.news h2 {
+    font-family: 'Gotham Book Bold', sans-serif;
+    font-size: 8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+section.news p {
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.content img.news-img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+section.about-us {
+    background: #fff;
+    padding: 7% 0 10%;
+}
+
+section.about-us h2 {
+    font-family: 'Gotham Book Bold', sans-serif;
+    font-size: 8rem;
+    font-weight: 700;
+    color: #202d48;
+    margin-top: 0;
+    margin-bottom: 7%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section.about-us p {
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    color: #160b19;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section.about-us .wrap {
+    float: left;
+    margin: 10% 0;
+    width: 100%;
+}
+
+section.about-us abbr {
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #160b19;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border: none;
+    cursor: default;
+    display: block;
+}
+
+section.about-us abbr b {
+    font-family: 'Gotham Book Medium', sans-serif;
+    font-weight: 500;
+}
+
+section.about-us abbr:last-of-type {
+    margin-bottom: 0;
+}
+
+section.contact-us {
+    background: #fff;
+    padding: 7% 0 10%;
+}
+
+section.contact-us label,
+section.contact-us p {
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    color: #160b19;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.news-time {
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 26px;
+    font-weight: 100;
+    color: #202d48;
+    line-height: 1.4;
+}
+
+.news-time .date {
+    text-transform: uppercase;
+}
+
+.contact-us .wrap {
+    float: left;
+    margin: 10% 0;
+    width: 100%;
+}
+
+.contact-us abbr {
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #160b19;
+    margin-top: 0;
+    margin-bottom: 40px;
+    border: none;
+    cursor: default;
+    display: block;
+    line-height: 44px;
+}
+
+.contact-us abbr b {
+    font-family: 'Gotham Book Medium', sans-serif;
+    font-weight: 500;
+}
+
+.contact-us abbr:last-of-type {
+    margin-bottom: 0;
+}
+
+.footer .bottom-area {
+    background-color: #fff;
+    border-top: solid 1px #e2e7ea;
+}
+
+.footer .bottom-area .bottom-area-wrap {
+    padding: 30px;
+    width: 100%;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer a {
+    -webkit-transition-timing-function: cubic-bezier(.25, .1, .25, 1);
+    -moz-transition-timing-function: cubic-bezier(.25, .1, .25, 1);
+    -o-transition-timing-function: cubic-bezier(.25, .1, .25, 1);
+    transition-timing-function: cubic-bezier(.25, .1, .25, 1);
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+}
+
+.footer .bottom-area .bottom-area-wrap .copyright {
+    padding-top: 18px;
+    color: #202d48;
+    margin-bottom: 0;
+}
+
+.footer .bottom-area .bottom-area-wrap .copyright a {
+    color: inherit;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+/*end*/
+
+@media (min-width: 1920px) {
+    body {
+        max-width: 1870px;
+        margin: 0 auto;
+        background: #eee;
+    }
+    .navbar-fixed-bottom,
+    .navbar-fixed-top {
+        width: 1870px;
+        left: auto;
+        right: auto;
+    }
+}
+
+@media (min-width: 1441px) {
+    .container {
+        width: 85%;
+    }
+    .carousel-caption p {
+        min-height: 150px;
+    }
+}
+
+@media (max-width:1440px) and (min-width: 992px) {
+    .navbar-default .navbar-nav > li > a {
+        font-size: 12px;
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width:1440px) and (min-width: 1170px) {
+    .navbar-default .navbar-nav > li > a {
+        font-size: 13px;
+        padding: 15px 10px;
+    }
+    .nav > li > a > img {
+        margin-top: 5px;
+        max-width: 170px;
+    }
+    .banner-heading h2,
+    .slider-heading h2,
+    section.news h2,
+    .why-works h2,
+    section.about-us h2 {
+        font-size: 5.5rem;
+        letter-spacing: 4px;
+    }
+    section.news p {
+        font-size: 26px;
+        font-weight: 100;
+        line-height: 1.7;
+        margin: 0 auto 40px;
+    }
+    section.content .sub-heading {
+        font-size: 26px;
+        line-height: 1.4;
+    }
+    section.contact h3 {
+        font-size: 26px;
+        font-weight: 100;
+        line-height: 5rem;
+        margin: 0 auto 40px;
+    }
+    .carousel-caption p {
+        font-size: 26px;
+        font-weight: 100;
+        line-height: 1.7;
+        max-width: 700px;
+    }
+    .slider-heading h3 {
+        font-size: 36px;
+    }
+    .why-works p {
+        font-size: 20px;
+    }
+    .works img {
+        min-height: 510px;
+    }
+    section.security .security-icon {
+        max-width: 130px;
+    }
+    section.security p {
+        font-size: 24px;
+    }
+    .carousel-caption p {
+        min-height: 270px;
+    }
+    .btn-polyverse {
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 24px;
+        min-width: 180px;
+    }
+    .btn-polyverse.btn-xs {
+        min-width: auto;
+        letter-spacing: 1px;
+    }
+    section.about-us p,
+    section.about-us abbr {
+        font-size: 20px;
+    }
+    section.about-us .wrap {
+        margin: 5% 0;
+    }
+    section.news .btn-polyverse.btn-xs {
+        min-width: 160px;
+    }
+    section.about-us .btn-polyverse.btn-xs,
+    section.contact-us .btn-polyverse.btn-xs {
+        min-width: 235px;
+    }
+}
+
+@media (max-width:1200px) and (min-width: 768px) {
+    .navbar-default .container {
+        width: 100%;
+    }
+    section.content .sub-heading.w-600 {
+        width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:1170px) and (min-width: 768px) {
+    .logo,
+    .logo a {
+        max-width: 220px;
+    }
+    .banner-heading h2,
+    .slider-heading h2,
+    section.news h2,
+    .why-works h2,
+    section.about-us h2 {
+        font-size: 3rem;
+    }
+    .slider-heading h3 {
+        font-size: 26px;
+    }
+    .carousel-caption p {
+        font-size: 2rem;
+        line-height: 1.4;
+        max-width: 600px;
+    }
+    .carousel-control img {
+        width: 35px;
+    }
+    .news-time,
+    section.content .title-bar,
+    section.contact h3,
+    section.content .sub-heading {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    section.content p,
+    section.security p,
+    .why-works p,
+    section.about-us p,
+    section.contact-us p,
+    section.contact-us label {
+        font-size: 16px;
+    }
+    section.news p {
+        font-size: 22px;
+    }
+    .why-works p {
+        margin-bottom: 30px;
+    }
+    section.about-us abbr,
+    section.contact-us abbr {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    section.about-us .wrap {
+        margin: 5% 0;
+    }
+    .why-works {
+        padding: 20px;
+    }
+    .works img {
+        min-height: 380px;
+    }
+    .btn-polyverse {
+        font-size: 16px;
+        line-height: 20px;
+        min-width: 180px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        padding-top: 15px;
+        width: auto;
+        text-align: center;
+        float: right;
+    }
+    .navbar-nav > li {
+        float: none;
+        display: inline-block;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        display: inline-block;
+    }
+    .logo {
+        display: none;
+    }
+    .logo-xs {
+        display: inline-block;
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+        margin-top: 22px;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in {
+        display: block !important;
+    }
+    .nav>li {
+        text-align: center;
+    }
+    .slider-heading h2 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .v-center {
+        display: table-cell;
+        float: none;
+        vertical-align: middle;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider-parallax {
+        background: url(../img/banner_masked.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: scroll;
+        background-size: cover;
+        margin-top: 100px;
+        padding: 40px 0;
+    }
+	.parallax {
+		background-attachment: scroll;
+	}
+    .banner-heading h2,
+    .slider-heading h2,
+    section.news h2,
+    .why-works h2,
+    section.about-us h2 {
+        font-size: 24px;
+    }
+    .news-time,
+    .slider-heading h3,
+    section.content .title-bar,
+    section.content .sub-heading {
+        font-size: 20px;
+    }
+    .carousel-caption p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    .carousel-control img {
+        width: 35px;
+    }
+    section.contact h3 {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    section.security p,
+    .why-works p,
+    section.about-us p,
+    section.contact-us p,
+    section.contact-us label,
+    section.content p {
+        font-size: 16px;
+    }
+    section.news p {
+        font-size: 22px;
+    }
+    .why-works p {
+        margin-bottom: 30px;
+    }
+    section.about-us abbr,
+    section.contact-us abbr {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    section.about-us .wrap {
+        margin: 5% 0;
+    }
+    .why-works,
+    .why-works.left {
+        padding: 15px;
+    }
+    .btn-polyverse {
+        font-size: 18px;
+        line-height: 24px;
+        min-width: auto;
+    }
+    section.security .security-icon {
+        max-width: 100px;
+        margin-bottom: 10px;
+    }
+    section.security .security-icon + p {
+        margin-bottom: 30px;
+    }
+    .carousel-control.right {
+        right: 0;
+        width: 50px;
+    }
+    .carousel-control.left {
+        left: 0;
+        width: 50px;
+    }
+    section.about-us img {
+        margin-bottom: 20px;
+    }
+    .logo-xs img {
+        max-width: 220px;
+    }
+    .slider-heading h2 {
+        line-height: 42px;
+    }
+	.title-bar.border-bottom span {
+		width: auto;
+	}
+}
+
+@media (max-width: 480px) {
+    .banner-heading h2:after {
+        display: none;
+    }
+    .banner-heading h2 {
+        border-bottom: 4px solid #e77e3b;
+    }
+    section.content .sub-heading {
+        line-height: 32px;
+    }
+}
+
+span.pvhighlight {
+  color: #173693;
+}
+
+span.code {
+  font-family: "Courier New";
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
