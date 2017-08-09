@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build && npm run serve",
     "watch": "NODE_ENV=development npm run build & npm run serve",
-    "build": "rm -rf build && node build.js",
+    "build": "node build.js",
     "serve": "serve ./build",
     "link-docs": "rm -rf docs && mkdir docs && cp -Rf .git docs && cd docs && git clean -d -x -f && git checkout docs"
   },
