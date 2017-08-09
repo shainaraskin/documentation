@@ -1,0 +1,34 @@
+{
+  "name": "polyverse-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && npm run serve",
+    "watch": "NODE_ENV=development npm run build & npm run serve",
+    "build": "rm -rf build && node build.js",
+    "serve": "serve ./build",
+    "link-docs": "rm -rf docs && mkdir docs && cp -Rf .git docs && cd docs && git clean -d -x -f && git checkout docs"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "handlebars": "^4.0.10",
+    "metalsmith": "^2.3.0",
+    "metalsmith-assets": "^0.1.0",
+    "metalsmith-autoprefixer": "^1.1.2",
+    "metalsmith-collections": "^0.9.0",
+    "metalsmith-headings": "^0.2.0",
+    "metalsmith-in-place": "^3.0.1",
+    "metalsmith-layouts": "^1.8.1",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-postcss": "^4.0.1",
+    "metalsmith-register-helpers": "^0.3.0",
+    "metalsmith-watch": "^1.0.3"
+  },
+  "dependencies": {
+    "serve": "^6.0.6"
+  }
+}
