@@ -5,28 +5,28 @@
 </head>
 	<body>
 		{{> navigation }}
+
 		<!--section-->
 		<section class="how-work-parallax parallax">
-				<div class="container">
-						<div class="banner">
-								<div class="col-xs-12 banner-heading">
-										<h2>Documentation</h2>
-								</div>
-
-						</div>
-				</div>
-		</section>
-		<!--end-->
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-3 col-lg-2">
-					{{> toc }}
-				</div>
-				<div class="col-md-9 col-lg-10">
-					{{{contents}}}
+			<div class="container">
+				<div class="banner">
+					<div class="col-xs-12 banner-heading">
+						<h2>Documentation</h2>
+					</div>
 				</div>
 			</div>
+		</section>
+		<!--end-->
+
+		<div class="container-fluid content">
+			<div class="col-md-3 col-lg-2 toc">
+				{{> toc }}
+			</div>
+			<div class="col-md-9 col-lg-10 .content">
+				{{{contents}}}
+			</div>
 		</div>
+
 		{{> footer }}
 	</body>
 </html>

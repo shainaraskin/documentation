@@ -14,6 +14,7 @@
   "keywords": [],
   "author": "",
   "devDependencies": {
+    "decamelize": "^1.2.0",
     "handlebars": "^4.0.10",
     "metalsmith": "^2.3.0",
     "metalsmith-assets": "^0.1.0",
@@ -26,7 +27,8 @@
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-postcss": "^4.0.1",
     "metalsmith-register-helpers": "^0.3.0",
-    "metalsmith-watch": "^1.0.3"
+    "metalsmith-watch": "^1.0.3",
+    "unslug": "^0.1.0"
   },
   "dependencies": {
     "serve": "^6.0.6"

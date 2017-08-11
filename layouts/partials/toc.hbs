@@ -1,0 +1,27 @@
+<aside class='toc'>
+	<nav>
+		<ul class='collections'>
+			{{#each collections as |collect collectionKey|}}
+				<li>
+					<h3>{{collectionKey}}</h3>
+					<ul class='sections'>
+						{{#each collect as |section sectionIndex|}}
+							<li>
+								<h4><a class="" href="/{{section.path}}">{{documentTitle section}}</a></h4>
+								<ul class='headings'>
+									{{#isActivePath ../../path path}}
+										{{#each section.headings}}
+											<li>
+												<h5><a class="" href="#{{id}}">{{text}}</a></h5>
+											</li>
+										{{/each}}
+									{{/isActivePath}}
+								</ul>
+							</li>
+						{{/each}}
+					</ul>
+				</li>
+			{{/each}}
+		</ul>
+	</nav>
+</aside>
