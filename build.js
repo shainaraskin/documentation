@@ -25,7 +25,7 @@ Metalsmith(__dirname)
 		environment: NODE_ENV
 	})
 	.source(SOURCE)
-	.ignore(['**/.git', '.gitignore', '.tmp'])
+	.ignore(['**/.git', '.gitignore', '.tmp', 'README.md'])
   .destination(DESTINATION)
   .clean(true)
 	.use(watch(NODE_ENV))
