@@ -92,4 +92,4 @@ npm run watch
 
 ## Compiled Site
 
-The documentation is served by Github pages and lives on the **html** branch. This code should always be compiled and committed via Jenkins or an automated build tool.
+The documentation is served by Github pages and lives on the **master** branch. This code should always be compiled and committed via Jenkins or an automated build tool.
