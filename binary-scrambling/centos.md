@@ -1,5 +1,11 @@
 # CentOS Binary Scrambling
 
+## **Optional**: Launch an interactive Docker Container for the OS
+
+```sh
+docker run --rm -it centos bash
+```
+
 ## Install Repo
 
 ```sh
