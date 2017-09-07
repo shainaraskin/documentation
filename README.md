@@ -24,22 +24,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 When the documentation is compiled it automatically generates a table of contents based on the file structure of the markdown files. The first level is a list of the root folders followed by level two which is a list of files in each of those folders.
 
-The names are either automatically created based on the filename in **CamelCase** or **Slug (example-slug-format)** format. Files can also have custom titles by setting the **title** property in a markdown files frontmatter.
+The names are either automatically created based on the filename **Slug (example-slug-format)** format. Files can also have custom titles by setting the **title** property in a markdown files frontmatter.
 
 A third section is added for each of a documents **h2 (##)** section headers
 
 `File Structure`
 
 ```
-FolderOne
-	FileOne.md
-	FileTwo.md
-folder-two
-	file-three.md
-	file-four.md
+folder-one
+	file-one.md
+	file-two.md
 ```
 
-`FileOne.md`
+`file-one.md`
 
 ```md
 
@@ -64,9 +61,6 @@ Folder One
 		Section One
 		Section Two
 	File two
-Folder Two
-	File Three
-	File Four
 ```
 
 
@@ -75,14 +69,17 @@ Folder Two
 
 Code used for building and deploying the documentation lives on the **src** branch. If you want to run a local copy of the documentation or edit templates, etc you will need to checkout the **src** branch and run the following commands.
 
-```
-# Ensure the current git staging area is clean (make sure all changes are saved first)
+```sh
+# Ensure the current git staging area is clean (make sureall changes are saved first)
 git reset --hard
 git fetch src
 git checkout src
 
 # Checkout a copy of the docs branch
 npm run link-docs
+
+# Create an initial build (This just ensures the ./build directory exists)
+npm run build
 
 # Start a simple http server, watch for changes and recompile.
 npm run watch
