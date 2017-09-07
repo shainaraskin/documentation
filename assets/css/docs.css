@@ -1,8 +1,42 @@
-body {
-	border-radius: 10px;
-	display: flex;
 
-	.my-nested-class {
-		background: yellow;
-	}
+h2:before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
+  visibility: hidden;
 }
+
+.content {
+	background: #fff;
+}
+
+.toc a {
+	color: inherit;
+}
+
+.toc ul {
+	list-style: none;
+	list-style-position: inside;
+}
+
+.toc .collections {
+	margin:0;
+	padding: 0;
+}
+
+.lang-selector span {
+	display: inline-block;
+	font-weight: bold;
+	margin: 1rem;
+}
+
+.lang-selector span:first-child {
+	color: red;
+}
+
+.lang-selector span:hover {
+	cursor: pointer;
+}
+
+.lang-selector

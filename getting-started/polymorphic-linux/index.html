@@ -102,6 +102,15 @@
 											<li>
 												<h4><a class="" href="/getting-started/polymorphic-linux">Polymorphic Linux</a></h4>
 												<ul class='headings'>
+															<li>
+																<h5><a class="" href="#alpine">Alpine</a></h5>
+															</li>
+															<li>
+																<h5><a class="" href="#centos">CentOS</a></h5>
+															</li>
+															<li>
+																<h5><a class="" href="#ubuntu">Ubuntu</a></h5>
+															</li>
 												</ul>
 											</li>
 									</ul>
@@ -121,7 +130,53 @@
 				</aside>
 			</div>
 			<div class="col-md-9 col-lg-10 .content">
-				
+				<h1 id="polymorphic-linux">Polymorphic Linux</h1>
+<p>This guide goes through the basics of installing and updating Polyverse’s Polymorphic Linux repositories on your system.</p>
+<h2 id="alpine">Alpine</h2>
+<p><strong>Optional</strong>: Launch an interactive Docker Container for the OS</p>
+<pre><code class="lang-sh">docker run --rm -it alpine sh
+</code></pre>
+<p>Install cURL and bash, then switch into bash</p>
+<pre><code class="lang-sh"># Installs cURL and bash on the alpine, then switches into bash
+apk update &amp;&amp; apk add -y curl bash &amp;&amp; bash
+</code></pre>
+<p>Install Repo</p>
+<pre><code class="lang-sh">curl https://repo.polyverse.io/config/alpine/v3.6/install | sh -s &quot;&lt;polyverse_scrambler_key&gt;&quot;
+</code></pre>
+<p>Reinstall all packages</p>
+<pre><code class="lang-sh">apk update &amp;&amp; apk info -q | xargs apk fix
+</code></pre>
+<p>Determine source of all installed packages:</p>
+<pre><code class="lang-sh">apk info | xargs apk policy
+</code></pre>
+<h2 id="centos">CentOS</h2>
+<p>Install Repo</p>
+<pre><code class="lang-sh">curl https://repo.polyverse.io/config/centos/7/install | bash -s &lt;polyverse_scrambler_key&gt;
+</code></pre>
+<p>Reinstall all packages</p>
+<pre><code class="lang-sh">yum reinstall -y \*
+</code></pre>
+<p>Determine source of all installed packages:</p>
+<pre><code class="lang-sh">rpm -qa vendor=&quot;*Polyverse*&quot;
+</code></pre>
+<h2 id="ubuntu">Ubuntu</h2>
+<p><strong>Optional</strong>: Launch an interactive Docker Container for the OS</p>
+<pre><code class="lang-sh">docker run --rm -it ubuntu bash
+</code></pre>
+<p>Install cURL</p>
+<pre><code class="lang-sh"># Installs cURL on the ubuntu image
+apt-get update &amp;&amp; apt-get install -y curl
+</code></pre>
+<p>Install Repo</p>
+<pre><code class="lang-sh">curl https://repo.polyverse.io/config/ubuntu/xenial/install | bash -s &lt;polyverse_scrambler_key&gt;
+</code></pre>
+<p>Reinstall all packages</p>
+<pre><code class="lang-sh">apt-get update &amp;&amp; apt-get -y --allow-change-held-packages install --reinstall $(dpkg --get-selections | awk &#39;{&#39;{&#39;}print $1{&#39;}&#39;}&#39;)
+</code></pre>
+<p>Determine which packages were installed from Polyverse</p>
+<pre><code class="lang-sh">{&quot;dpkg --get-selections | awk &#39;{print $1}&#39; | xargs apt-cache madison&quot;}
+</code></pre>
+
 			</div>
 		</div>
 
