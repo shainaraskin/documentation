@@ -1,6 +1,6 @@
 # Polymorphic Linux
 
-This guide goes through the basics of installing and updating Polyverse's Polymorphic Linux repositories on your system.
+Polymorphic Linux are compile-time scrambled sets of drop-in-replacement packages for popular Linux distributions. This guide goes through the basics of installing and updating Polyverse's Polymorphic Linux repositories on your system.
 
 
 
